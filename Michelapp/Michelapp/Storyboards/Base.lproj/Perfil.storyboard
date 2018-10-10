@@ -5,7 +5,6 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -47,14 +46,6 @@
                                     <segue destination="Bg9-HR-RlF" kind="show" id="vH5-81-be7"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZPA-qT-hLR">
-                                <rect key="frame" x="179" y="0.0" width="196" height="667"/>
-                                <color key="backgroundColor" name="deepBlue"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="196" id="cpt-bM-OEC"/>
-                                    <constraint firstAttribute="height" constant="667" id="jkT-YI-20w"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35h-eK-Pra">
                                 <rect key="frame" x="56" y="87" width="66" height="24"/>
                                 <constraints>
@@ -67,14 +58,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ZPA-qT-hLR" firstAttribute="bottom" secondItem="YnQ-OQ-Sbq" secondAttribute="bottom" id="1cp-5V-o8A"/>
                             <constraint firstItem="PiQ-5E-MLn" firstAttribute="leading" secondItem="YnQ-OQ-Sbq" secondAttribute="leading" constant="7" id="22p-aG-rqB"/>
-                            <constraint firstItem="ZPA-qT-hLR" firstAttribute="top" secondItem="dL4-eC-X1e" secondAttribute="top" id="2Z6-En-AOu"/>
-                            <constraint firstItem="ZPA-qT-hLR" firstAttribute="leading" secondItem="35h-eK-Pra" secondAttribute="trailing" constant="57" id="45K-2h-DbI"/>
                             <constraint firstItem="9Av-vO-pSc" firstAttribute="centerY" secondItem="dL4-eC-X1e" secondAttribute="centerY" constant="10" id="4CI-lk-osn"/>
                             <constraint firstItem="9Av-vO-pSc" firstAttribute="centerX" secondItem="dL4-eC-X1e" secondAttribute="centerX" constant="90" id="LpV-A9-UUe"/>
-                            <constraint firstItem="ZPA-qT-hLR" firstAttribute="leading" secondItem="PiQ-5E-MLn" secondAttribute="trailing" constant="8" id="PhG-sE-l2v"/>
-                            <constraint firstItem="ZPA-qT-hLR" firstAttribute="trailing" secondItem="YnQ-OQ-Sbq" secondAttribute="trailing" id="WVv-JT-3RS"/>
                             <constraint firstItem="35h-eK-Pra" firstAttribute="top" secondItem="YnQ-OQ-Sbq" secondAttribute="top" constant="67" id="ebd-e9-S3i"/>
                             <constraint firstItem="ASx-eY-WsF" firstAttribute="top" secondItem="PiQ-5E-MLn" secondAttribute="bottom" constant="104" id="gxt-uU-ZjS"/>
                             <constraint firstItem="ASx-eY-WsF" firstAttribute="leading" secondItem="YnQ-OQ-Sbq" secondAttribute="leading" constant="7" id="ons-mN-h2J"/>
@@ -83,6 +69,7 @@
                             <constraint firstItem="PiQ-5E-MLn" firstAttribute="top" secondItem="35h-eK-Pra" secondAttribute="bottom" constant="54" id="rwn-7k-IYf"/>
                             <constraint firstItem="YnQ-OQ-Sbq" firstAttribute="bottom" secondItem="ASx-eY-WsF" secondAttribute="bottom" constant="48" id="sn1-Yt-wPn"/>
                             <constraint firstItem="9Av-vO-pSc" firstAttribute="leading" secondItem="ASx-eY-WsF" secondAttribute="trailing" constant="8.5" id="tEn-YH-oli"/>
+                            <constraint firstItem="9Av-vO-pSc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="35h-eK-Pra" secondAttribute="trailing" constant="8" symbolic="YES" id="w8f-ls-LUR"/>
                             <constraint firstItem="9Av-vO-pSc" firstAttribute="leading" secondItem="PiQ-5E-MLn" secondAttribute="trailing" constant="8.5" id="zqx-g7-L4Y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YnQ-OQ-Sbq"/>
@@ -105,8 +92,5 @@
         <image name="Background" width="1398" height="2592"/>
         <image name="Bartender" width="361" height="383"/>
         <image name="Consumer" width="356" height="346"/>
-        <namedColor name="deepBlue">
-            <color red="0.23529411764705882" green="0.63921568627450975" blue="0.94117647058823528" alpha="0.92100000381469727" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
     </resources>
 </document>
