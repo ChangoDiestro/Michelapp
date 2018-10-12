@@ -17,19 +17,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="cGN-4I-j6o">
-                                <rect key="frame" x="46" y="200.5" width="283" height="266"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="cGN-4I-j6o">
+                                <rect key="frame" x="80" y="227.5" width="215" height="212"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="283" id="4bz-CU-d2z"/>
-                                    <constraint firstAttribute="width" secondItem="cGN-4I-j6o" secondAttribute="height" multiplier="283:266" id="de4-Vl-1uO"/>
-                                    <constraint firstAttribute="height" constant="266" id="x68-wG-5VT"/>
+                                    <constraint firstAttribute="height" constant="212" id="TP2-TL-pV2"/>
+                                    <constraint firstAttribute="width" secondItem="cGN-4I-j6o" secondAttribute="height" multiplier="215:212" id="lci-TM-8EI"/>
+                                    <constraint firstAttribute="width" constant="215" id="smC-ue-VtD"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Michelapp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMV-3f-peb">
+                                <rect key="frame" x="103" y="196" width="168" height="59"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="55"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.99019607840000001" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
-                            <constraint firstItem="cGN-4I-j6o" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="c0N-5M-fZy"/>
-                            <constraint firstItem="cGN-4I-j6o" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="xhI-kp-1OL"/>
+                            <constraint firstItem="cGN-4I-j6o" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="EjM-hq-tT6"/>
+                            <constraint firstItem="cGN-4I-j6o" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="MG9-Z0-mWC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rMV-3f-peb" secondAttribute="trailing" constant="104" id="NWO-Xc-ga5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rMV-3f-peb" secondAttribute="bottom" constant="412" id="NjW-b8-mjh"/>
+                            <constraint firstItem="rMV-3f-peb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="176" id="cJR-9k-pIl"/>
+                            <constraint firstItem="rMV-3f-peb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="103" id="vc0-8K-r11"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
