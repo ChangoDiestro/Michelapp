@@ -1,0 +1,6 @@
+framework module Pods_MichelappTests {
+  umbrella header "Pods-MichelappTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

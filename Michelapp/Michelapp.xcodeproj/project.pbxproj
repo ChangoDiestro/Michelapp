@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		198A03D145D009E3B512D2AC /* Pods_MichelappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46759ABD09A5B6D3981F4496 /* Pods_MichelappTests.framework */; };
 		45CA3B54217BA27900C3C2CE /* FavoritesBeersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA3B53217BA27900C3C2CE /* FavoritesBeersTableViewController.swift */; };
 		45CA3B56217BA2A100C3C2CE /* ListBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA3B55217BA2A100C3C2CE /* ListBeerViewController.swift */; };
 		576B148A216E5A6100B9E0FA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B1489216E5A6100B9E0FA /* HomeViewController.swift */; };
@@ -15,7 +16,10 @@
 		5776C3CA216CF28300E2AA80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5776C3C8216CF28300E2AA80 /* LaunchScreen.storyboard */; };
 		5776C3D5216CF28300E2AA80 /* MichelappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5776C3D4216CF28300E2AA80 /* MichelappTests.swift */; };
 		5776C3E0216CF28300E2AA80 /* MichelappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5776C3DF216CF28300E2AA80 /* MichelappUITests.swift */; };
+		57AB367D217BAB90000D93C1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AB367C217BAB90000D93C1 /* Alamofire.framework */; };
 		57B4EF3C216DA15100774C2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57B4EF3B216DA15100774C2F /* Assets.xcassets */; };
+		C8895C87FE09AB41A9C3F547 /* Pods_MichelappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D77958AFDBA14B9C70CE2F /* Pods_MichelappUITests.framework */; };
+		EB4A564DCE35FBB428EF1A99 /* Pods_Michelapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6B0423EA5CFB37AED1B908 /* Pods_Michelapp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 /* Begin PBXFileReference section */
 		45CA3B53217BA27900C3C2CE /* FavoritesBeersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesBeersTableViewController.swift; sourceTree = "<group>"; };
 		45CA3B55217BA2A100C3C2CE /* ListBeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBeerViewController.swift; sourceTree = "<group>"; };
+		46759ABD09A5B6D3981F4496 /* Pods_MichelappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MichelappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51D77958AFDBA14B9C70CE2F /* Pods_MichelappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MichelappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		569A37D0A3A0079B5DE48933 /* Pods-MichelappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MichelappTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MichelappTests/Pods-MichelappTests.debug.xcconfig"; sourceTree = "<group>"; };
+		572C4DD8217BAADB006317E6 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		576B1489216E5A6100B9E0FA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		576B1491216E7C2D00B9E0FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Perfil.storyboard; sourceTree = "<group>"; };
 		5776C3BC216CF28100E2AA80 /* Michelapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Michelapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,7 +58,14 @@
 		5776C3DB216CF28300E2AA80 /* MichelappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MichelappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5776C3DF216CF28300E2AA80 /* MichelappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MichelappUITests.swift; sourceTree = "<group>"; };
 		5776C3E1216CF28300E2AA80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57AB367C217BAB90000D93C1 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B4EF3B216DA15100774C2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		680B49EB810709E266F56516 /* Pods-Michelapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Michelapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Michelapp/Pods-Michelapp.release.xcconfig"; sourceTree = "<group>"; };
+		9A6B0423EA5CFB37AED1B908 /* Pods_Michelapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Michelapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C98C5981CC45F0CB7B64C0A1 /* Pods-MichelappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MichelappTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MichelappTests/Pods-MichelappTests.release.xcconfig"; sourceTree = "<group>"; };
+		DD426E2FEDB36E4A94F36187 /* Pods-MichelappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MichelappUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MichelappUITests/Pods-MichelappUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD527E0321B22013D1E16B9B /* Pods-MichelappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MichelappUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MichelappUITests/Pods-MichelappUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DF3130C892156160771EFE44 /* Pods-Michelapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Michelapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Michelapp/Pods-Michelapp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57AB367D217BAB90000D93C1 /* Alamofire.framework in Frameworks */,
+				EB4A564DCE35FBB428EF1A99 /* Pods_Michelapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				198A03D145D009E3B512D2AC /* Pods_MichelappTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,15 +90,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8895C87FE09AB41A9C3F547 /* Pods_MichelappUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		358760B478732DD1FD857087 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF3130C892156160771EFE44 /* Pods-Michelapp.debug.xcconfig */,
+				680B49EB810709E266F56516 /* Pods-Michelapp.release.xcconfig */,
+				569A37D0A3A0079B5DE48933 /* Pods-MichelappTests.debug.xcconfig */,
+				C98C5981CC45F0CB7B64C0A1 /* Pods-MichelappTests.release.xcconfig */,
+				DD426E2FEDB36E4A94F36187 /* Pods-MichelappUITests.debug.xcconfig */,
+				DD527E0321B22013D1E16B9B /* Pods-MichelappUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		576B148B216E7A4100B9E0FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				57AB367C217BAB90000D93C1 /* Alamofire.framework */,
+				572C4DD8217BAADB006317E6 /* Alamofire.framework */,
+				9A6B0423EA5CFB37AED1B908 /* Pods_Michelapp.framework */,
+				46759ABD09A5B6D3981F4496 /* Pods_MichelappTests.framework */,
+				51D77958AFDBA14B9C70CE2F /* Pods_MichelappUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -93,6 +130,7 @@
 				5776C3DE216CF28300E2AA80 /* MichelappUITests */,
 				5776C3BD216CF28100E2AA80 /* Products */,
 				576B148B216E7A4100B9E0FA /* Frameworks */,
+				358760B478732DD1FD857087 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,9 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5776C3E4216CF28300E2AA80 /* Build configuration list for PBXNativeTarget "Michelapp" */;
 			buildPhases = (
+				17B1EA875B778A54BEDBFB99 /* [CP] Check Pods Manifest.lock */,
 				5776C3B8216CF28100E2AA80 /* Sources */,
 				5776C3B9216CF28100E2AA80 /* Frameworks */,
 				5776C3BA216CF28100E2AA80 /* Resources */,
+				D7B3C0BA4ADAE05BBCC762F3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5776C3E7216CF28300E2AA80 /* Build configuration list for PBXNativeTarget "MichelappTests" */;
 			buildPhases = (
+				499E683DBCA2D05CD182F428 /* [CP] Check Pods Manifest.lock */,
 				5776C3CC216CF28300E2AA80 /* Sources */,
 				5776C3CD216CF28300E2AA80 /* Frameworks */,
 				5776C3CE216CF28300E2AA80 /* Resources */,
+				927100D6A3D5B8D76BA81C1B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,9 +239,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5776C3EA216CF28300E2AA80 /* Build configuration list for PBXNativeTarget "MichelappUITests" */;
 			buildPhases = (
+				158C5199BE691B4D86560082 /* [CP] Check Pods Manifest.lock */,
 				5776C3D7216CF28300E2AA80 /* Sources */,
 				5776C3D8216CF28300E2AA80 /* Frameworks */,
 				5776C3D9216CF28300E2AA80 /* Resources */,
+				072ABBE6785FF3BFEC2C8296 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -285,6 +329,141 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		072ABBE6785FF3BFEC2C8296 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MichelappUITests/Pods-MichelappUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MichelappUITests/Pods-MichelappUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		158C5199BE691B4D86560082 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MichelappUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		17B1EA875B778A54BEDBFB99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Michelapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		499E683DBCA2D05CD182F428 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MichelappTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		927100D6A3D5B8D76BA81C1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MichelappTests/Pods-MichelappTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MichelappTests/Pods-MichelappTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7B3C0BA4ADAE05BBCC762F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Michelapp/Pods-Michelapp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Michelapp/Pods-Michelapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5776C3B8216CF28100E2AA80 /* Sources */ = {
@@ -467,6 +646,7 @@
 		};
 		5776C3E5216CF28300E2AA80 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF3130C892156160771EFE44 /* Pods-Michelapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -486,6 +666,7 @@
 		};
 		5776C3E6216CF28300E2AA80 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 680B49EB810709E266F56516 /* Pods-Michelapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -505,6 +686,7 @@
 		};
 		5776C3E8216CF28300E2AA80 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 569A37D0A3A0079B5DE48933 /* Pods-MichelappTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -526,6 +708,7 @@
 		};
 		5776C3E9216CF28300E2AA80 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C98C5981CC45F0CB7B64C0A1 /* Pods-MichelappTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -547,6 +730,7 @@
 		};
 		5776C3EB216CF28300E2AA80 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD426E2FEDB36E4A94F36187 /* Pods-MichelappUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -567,6 +751,7 @@
 		};
 		5776C3EC216CF28300E2AA80 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD527E0321B22013D1E16B9B /* Pods-MichelappUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreLocation
+import Alamofire
 
 class HomeViewController: UIViewController, CLLocationManagerDelegate {
     
