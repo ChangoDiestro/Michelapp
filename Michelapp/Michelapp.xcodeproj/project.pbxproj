@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		576B1488216E59E000B9E0FA /* Consumer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576B1487216E59E000B9E0FA /* Consumer.storyboard */; };
 		576B148A216E5A6100B9E0FA /* ConsumerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B1489216E5A6100B9E0FA /* ConsumerViewController.swift */; };
 		576B148E216E7B0A00B9E0FA /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576B1490216E7B0A00B9E0FA /* Perfil.storyboard */; };
 		5776C3C0216CF28100E2AA80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5776C3BF216CF28100E2AA80 /* AppDelegate.swift */; };
@@ -36,7 +35,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		576B1487216E59E000B9E0FA /* Consumer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Consumer.storyboard; sourceTree = "<group>"; };
 		576B1489216E5A6100B9E0FA /* ConsumerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumerViewController.swift; sourceTree = "<group>"; };
 		576B1491216E7C2D00B9E0FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Perfil.storyboard; sourceTree = "<group>"; };
 		5776C3BC216CF28100E2AA80 /* Michelapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Michelapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,7 +148,6 @@
 			isa = PBXGroup;
 			children = (
 				576B1490216E7B0A00B9E0FA /* Perfil.storyboard */,
-				576B1487216E59E000B9E0FA /* Consumer.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -266,7 +263,6 @@
 			files = (
 				5776C3CA216CF28300E2AA80 /* LaunchScreen.storyboard in Resources */,
 				57B4EF3C216DA15100774C2F /* Assets.xcassets in Resources */,
-				576B1488216E59E000B9E0FA /* Consumer.storyboard in Resources */,
 				576B148E216E7B0A00B9E0FA /* Perfil.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
