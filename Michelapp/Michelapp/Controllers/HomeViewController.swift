@@ -1,5 +1,5 @@
 //
-//  ConsumerViewController.swift
+//  HomeViewController.swift
 //  Michelapp
 //
 //  Created by Abraham Quezada on 10/10/18.
@@ -9,7 +9,7 @@
 import UIKit
 import CoreLocation
 
-class ConsumerViewController: UIViewController, CLLocationManagerDelegate {
+class HomeViewController: UIViewController, CLLocationManagerDelegate {
     
     var locationManager: CLLocationManager!
 
