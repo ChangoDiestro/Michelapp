@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45CA3B54217BA27900C3C2CE /* FavoritesBeersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA3B53217BA27900C3C2CE /* FavoritesBeersTableViewController.swift */; };
+		45CA3B56217BA2A100C3C2CE /* ListBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA3B55217BA2A100C3C2CE /* ListBeerViewController.swift */; };
 		576B148A216E5A6100B9E0FA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B1489216E5A6100B9E0FA /* HomeViewController.swift */; };
 		576B148E216E7B0A00B9E0FA /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576B1490216E7B0A00B9E0FA /* Perfil.storyboard */; };
 		5776C3C0216CF28100E2AA80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5776C3BF216CF28100E2AA80 /* AppDelegate.swift */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45CA3B53217BA27900C3C2CE /* FavoritesBeersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesBeersTableViewController.swift; sourceTree = "<group>"; };
+		45CA3B55217BA2A100C3C2CE /* ListBeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBeerViewController.swift; sourceTree = "<group>"; };
 		576B1489216E5A6100B9E0FA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		576B1491216E7C2D00B9E0FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Perfil.storyboard; sourceTree = "<group>"; };
 		5776C3BC216CF28100E2AA80 /* Michelapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Michelapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				576B1489216E5A6100B9E0FA /* HomeViewController.swift */,
+				45CA3B53217BA27900C3C2CE /* FavoritesBeersTableViewController.swift */,
+				45CA3B55217BA2A100C3C2CE /* ListBeerViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -285,8 +291,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45CA3B56217BA2A100C3C2CE /* ListBeerViewController.swift in Sources */,
 				5776C3C0216CF28100E2AA80 /* AppDelegate.swift in Sources */,
 				576B148A216E5A6100B9E0FA /* HomeViewController.swift in Sources */,
+				45CA3B54217BA27900C3C2CE /* FavoritesBeersTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
