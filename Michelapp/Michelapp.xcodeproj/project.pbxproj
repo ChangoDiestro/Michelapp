@@ -78,6 +78,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45AA63EC217BA67F00430A86 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		576B148B216E7A4100B9E0FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +116,7 @@
 		5776C3BE216CF28100E2AA80 /* Michelapp */ = {
 			isa = PBXGroup;
 			children = (
+				45AA63EC217BA67F00430A86 /* New Group */,
 				57B4EF34216D94C100774C2F /* Storyboards */,
 				57B4EF33216D946000774C2F /* Controllers */,
 				5776C3BF216CF28100E2AA80 /* AppDelegate.swift */,
