@@ -1,5 +1,5 @@
 //
-//  ConsumerViewController.swift
+//  HomeViewController.swift
 //  Michelapp
 //
 //  Created by Abraham Quezada on 10/10/18.
@@ -9,7 +9,7 @@
 import UIKit
 import CoreLocation
 
-class ConsumerViewController: UIViewController, CLLocationManagerDelegate {
+class HomeViewController: UIViewController, CLLocationManagerDelegate {
     
     var locationManager: CLLocationManager!
 
@@ -19,8 +19,7 @@ class ConsumerViewController: UIViewController, CLLocationManagerDelegate {
         locationManager = CLLocationManager()
         locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
-        
-        //view.backgroundColor = UIColor.gray
+    
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
@@ -33,7 +32,22 @@ class ConsumerViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
 
-    
+    func monitorRegionAtLocation(center: CLLocationCoordinate2D, identifier: String ) {
+        // Make sure the app is authorized.
+        if CLLocationManager.authorizationStatus() == .authorizedAlways {
+            // Make sure region monitoring is supported.
+            if CLLocationManager.isMonitoringAvailable(for: CLCircularRegion.self) {
+                // Register the region.
+                let maxDistance = locationManager.maximumRegionMonitoringDistance
+                let region = CLCircularRegion(center: center,
+                                              radius: maxDistance, identifier: identifier)
+                region.notifyOnEntry = true
+                region.notifyOnExit = false
+                
+                locationManager.startMonitoring(for: region)
+            }
+        }
+    }
 
     /*
     // MARK: - Navigation

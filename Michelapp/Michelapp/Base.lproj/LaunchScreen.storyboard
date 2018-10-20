@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,22 +26,11 @@
                                     <constraint firstAttribute="width" constant="215" id="smC-ue-VtD"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Michelapp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMV-3f-peb">
-                                <rect key="frame" x="103" y="196" width="168" height="59"/>
-                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="55"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="backgroundColor" name="LaunchScreenColor"/>
                         <constraints>
                             <constraint firstItem="cGN-4I-j6o" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="EjM-hq-tT6"/>
                             <constraint firstItem="cGN-4I-j6o" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="MG9-Z0-mWC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rMV-3f-peb" secondAttribute="trailing" constant="104" id="NWO-Xc-ga5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rMV-3f-peb" secondAttribute="bottom" constant="412" id="NjW-b8-mjh"/>
-                            <constraint firstItem="rMV-3f-peb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="176" id="cJR-9k-pIl"/>
-                            <constraint firstItem="rMV-3f-peb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="103" id="vc0-8K-r11"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -51,6 +41,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchScreen" width="3775" height="2182"/>
+        <image name="LaunchScreen" width="512" height="512"/>
+        <namedColor name="LaunchScreenColor">
+            <color red="0.20392156862745098" green="0.29803921568627451" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
