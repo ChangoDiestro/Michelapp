@@ -16,13 +16,13 @@ class FavoritesBeersTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        favoriteBeerArray = UserDefaults.standard.array(forKey: "favoriteArray" ) as! Array<String>
+        //favoriteBeerArray = UserDefaults.standard.array(forKey: "favoriteArray" ) as! Array<String>
          print(favoriteBeerArray)
       
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        favoriteBeerArray = UserDefaults.standard.array(forKey: "favoriteArray" ) as! Array<String>
+        //favoriteBeerArray = UserDefaults.standard.array(forKey: "favoriteArray" ) as! Array<String>
         tableView.reloadData()
     }
 

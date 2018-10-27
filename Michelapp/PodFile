@@ -7,17 +7,20 @@ target 'Michelapp' do
   
   # Pods for Michelapp
   pod 'Alamofire', '~> 4.7'
+  pod 'AlamofireImage', '~> 3.4'
 
   target 'MichelappTests' do
     inherit! :search_paths
     # Pods for testing
 	pod 'Alamofire', '~> 4.7'
+  pod 'AlamofireImage', '~> 3.4'
   end
 
   target 'MichelappUITests' do
     inherit! :search_paths
     # Pods for testing
     pod 'Alamofire', '~> 4.7'
+    pod 'AlamofireImage', '~> 3.4'
   end
 
 end

@@ -16,6 +16,7 @@
 		56AFBFE5218447F00024E0CE /* descriptionBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AFBFE4218447F00024E0CE /* descriptionBeerViewController.swift */; };
 		576B148A216E5A6100B9E0FA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B1489216E5A6100B9E0FA /* HomeViewController.swift */; };
 		576B148E216E7B0A00B9E0FA /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576B1490216E7B0A00B9E0FA /* Perfil.storyboard */; };
+		5774A2142184AEF60078E42D /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5774A2132184AEF50078E42D /* AlamofireImage.framework */; };
 		5776C3C0216CF28100E2AA80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5776C3BF216CF28100E2AA80 /* AppDelegate.swift */; };
 		5776C3CA216CF28300E2AA80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5776C3C8216CF28300E2AA80 /* LaunchScreen.storyboard */; };
 		5776C3D5216CF28300E2AA80 /* MichelappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5776C3D4216CF28300E2AA80 /* MichelappTests.swift */; };
@@ -56,6 +57,7 @@
 		572C4DD8217BAADB006317E6 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		576B1489216E5A6100B9E0FA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		576B1491216E7C2D00B9E0FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Perfil.storyboard; sourceTree = "<group>"; };
+		5774A2132184AEF50078E42D /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5776C3BC216CF28100E2AA80 /* Michelapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Michelapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5776C3BF216CF28100E2AA80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5776C3C9216CF28300E2AA80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5774A2142184AEF60078E42D /* AlamofireImage.framework in Frameworks */,
 				57AB367D217BAB90000D93C1 /* Alamofire.framework in Frameworks */,
 				EB4A564DCE35FBB428EF1A99 /* Pods_Michelapp.framework in Frameworks */,
 			);
@@ -121,6 +124,7 @@
 		576B148B216E7A4100B9E0FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5774A2132184AEF50078E42D /* AlamofireImage.framework */,
 				57AB367C217BAB90000D93C1 /* Alamofire.framework */,
 				572C4DD8217BAADB006317E6 /* Alamofire.framework */,
 				9A6B0423EA5CFB37AED1B908 /* Pods_Michelapp.framework */,
@@ -351,10 +355,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MichelappUITests/Pods-MichelappUITests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -423,10 +429,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MichelappTests/Pods-MichelappTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -441,10 +449,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Michelapp/Pods-Michelapp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

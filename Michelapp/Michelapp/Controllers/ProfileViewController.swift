@@ -20,11 +20,11 @@ class ProfileViewController: UIViewController,UITableViewDataSource,UITableViewD
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
-       consumptionArray = UserDefaults.standard.array(forKey: "consumptionArray") as! Array<String>
+       //consumptionArray = UserDefaults.standard.array(forKey: "consumptionArray") as! Array<String>
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        consumptionArray = UserDefaults.standard.array(forKey: "consumptionArray") as! Array<String>
+        //consumptionArray = UserDefaults.standard.array(forKey: "consumptionArray") as! Array<String>
         tableView.reloadData()
         
     }
