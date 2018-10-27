@@ -10,8 +10,11 @@ import UIKit
 import Alamofire
 import AlamofireImage
 
-
-
+var nameArray: Array<String> = []
+var descriptionArray: Array<String> = []
+var priceArray: Array<String> = []
+var imageURLArray: Array<String> = []
+var myIndex = 0
 class ListBeerViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
@@ -19,13 +22,8 @@ class ListBeerViewController: UIViewController, UITableViewDelegate, UITableView
     
     
     var jsonArray: NSArray?
-    var nameArray: Array<String> = []
-    var descriptionArray: Array<String> = []
-    var priceArray: Array<String> = []
-    var imageURLArray: Array<String> = []
     var favoriteBeerArray: Array<String> = []
     var consumptionArray: Array<String> = []
-    var myIndex = 0
     
     
     override func viewDidLoad() {
@@ -50,10 +48,11 @@ class ListBeerViewController: UIViewController, UITableViewDelegate, UITableView
                     let price = item["price"] as? String
                     let image = item["image"] as? String
                     
-                    self.nameArray.append((name)!)
-                    self.descriptionArray.append((description)!)
-                    self.priceArray.append((price)!)
-                    self.imageURLArray.append((image)!)
+                    
+                    nameArray.append((name)!)
+                    descriptionArray.append((description)!)
+                    priceArray.append((price)!)
+                    imageURLArray.append((image)!)
                     
                 }
                 self.tableView.reloadData()
@@ -74,9 +73,16 @@ class ListBeerViewController: UIViewController, UITableViewDelegate, UITableView
         myIndex = indexPath.row
         performSegue(withIdentifier: "sugueCustomer", sender: self)
     }
+    
+  /*  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier = "sugueCustomer", let nextScene = segue.destination as DesccriptionViewController, let indexPath = self.tableView.indexPathForSelectedRow{
+            
+        }
+    } */
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // return self.nameArray.count
-        return self.nameArray.count
+        return nameArray.count
         
     }
     
@@ -110,7 +116,7 @@ class ListBeerViewController: UIViewController, UITableViewDelegate, UITableView
     {
         let FavoriteAction = UITableViewRowAction(style: .destructive, title: "Favorite") { (action, indexpath) in
             
-            self.favoriteBeerArray.append(self.nameArray[indexPath.row])
+            self.favoriteBeerArray.append(nameArray[indexPath.row])
             
          //   print(self.favoriteBeerArray)
             UserDefaults.standard.set(self.favoriteBeerArray, forKey: "favoriteArray")
@@ -131,7 +137,7 @@ class ListBeerViewController: UIViewController, UITableViewDelegate, UITableView
         let BuyAction = UITableViewRowAction(style: .destructive, title: "Buy") { (action, indexpath) in
             let alert = UIAlertController(title: "Congratulations", message: "Enjoy your beer", preferredStyle: .alert)
             
-            self.consumptionArray.append(self.nameArray[indexPath.row])
+            self.consumptionArray.append(nameArray[indexPath.row])
             UserDefaults.standard.set(self.consumptionArray, forKey: "consumptionArray")
             
             alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: nil))
