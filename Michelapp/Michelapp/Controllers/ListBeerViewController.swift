@@ -82,16 +82,22 @@ class ListBeerViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellBeer", for: indexPath)
+        //let url = URL(string: self.imageURLArray[indexPath.row])
+
+        //cell.imageView?.af_setImage(withURL: url!)
+        
+        let url = URL(string: imageURLArray[indexPath.row])
+        
+        DispatchQueue.global().async {
+            let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
+            DispatchQueue.main.async {
+                cell.imageView?.image = UIImage(data: data!)
+            }
+        }
         
         cell.textLabel?.text = nameArray[indexPath.row]
-      //  cell.imageView?.image = imageURLArray
-       cell.detailTextLabel?.text = priceArray[indexPath.row]
+        cell.detailTextLabel?.text = priceArray[indexPath.row]
         
-     /*   let url = URL(string: imageURLArray[indexPath.row])
-        let data = try? Data(contentsOf: url!)
-        if let imageData = data {
-              cell.imgBeer.image = UIImage(data: imageData)
-        } */
         
         
         
