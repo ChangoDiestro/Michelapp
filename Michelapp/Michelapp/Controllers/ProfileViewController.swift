@@ -8,23 +8,38 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
-
+class ProfileViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+  
+    var consumptionArray: Array<String>  = [] 
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        
+       consumptionArray = UserDefaults.standard.array(forKey: "consumptionArray") as! Array<String>
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidAppear(_ animated: Bool) {
+        consumptionArray = UserDefaults.standard.array(forKey: "consumptionArray") as! Array<String>
+        tableView.reloadData()
+        
     }
-    */
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return consumptionArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "custumerCell", for: indexPath)
+        
+        cell.textLabel?.text = consumptionArray[indexPath.row]
+        return cell
+        
+    }
+ 
 
 }
