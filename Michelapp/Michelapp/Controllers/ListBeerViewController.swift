@@ -22,6 +22,8 @@ class ListBeerViewController: UIViewController, UITableViewDelegate, UITableView
     var descriptionArray: Array<String> = []
     var priceArray: Array<String> = []
     var imageURLArray: Array<String> = []
+    var favoriteBeerArray: Array<String> = []
+    var consumptionArray: Array<String> = []
     
     
     override func viewDidLoad() {
@@ -64,9 +66,7 @@ class ListBeerViewController: UIViewController, UITableViewDelegate, UITableView
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
+  
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -78,12 +78,12 @@ class ListBeerViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellBeer", for: indexPath) as! beerTableViewCell
         
-        
-        //cell.textLabel?.text = self.nameArray[indexPath.row]
-        let url = URL(string: "http://i.imgur.com/w5rkSIj.jpg")
+        cell.lblTitle.text = nameArray[indexPath.row]
+        cell.lblPrice.text = priceArray[indexPath.row]
+        let url = URL(string: imageURLArray[indexPath.row])
         let data = try? Data(contentsOf: url!)
         if let imageData = data {
-              cell.imgBeer = UIImageView(image: UIImage(data: imageData))
+              cell.imgBeer.image = UIImage(data: imageData)
         }
         
         
@@ -92,16 +92,44 @@ class ListBeerViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]?
+    {
+        let FavoriteAction = UITableViewRowAction(style: .destructive, title: "Favorite") { (action, indexpath) in
+            
+            self.favoriteBeerArray.append(self.nameArray[indexPath.row])
+            
+         //   print(self.favoriteBeerArray)
+            UserDefaults.standard.set(self.favoriteBeerArray, forKey: "favoriteArray")
+          //  print(UserDefaults.standard.array(forKey: "favoriteArray" ))
+           
+            
+            let alert = UIAlertController(title: "Congratulations", message: "You added this beer a your favorite list.", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: nil))
+           
+            
+            self.present(alert, animated: true)
+        }
+        FavoriteAction.backgroundColor = .blue
+        
+        
+        
+        let BuyAction = UITableViewRowAction(style: .destructive, title: "Buy") { (action, indexpath) in
+            let alert = UIAlertController(title: "Congratulations", message: "Enjoy your beer", preferredStyle: .alert)
+            
+            self.consumptionArray.append(self.nameArray[indexPath.row])
+            UserDefaults.standard.set(self.consumptionArray, forKey: "consumptionArray")
+            
+            alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: nil))
+            
+            
+            self.present(alert, animated: true)
+        }
+        BuyAction.backgroundColor = .green
+        
+       
+        return [FavoriteAction,BuyAction]
+    }
     
 }

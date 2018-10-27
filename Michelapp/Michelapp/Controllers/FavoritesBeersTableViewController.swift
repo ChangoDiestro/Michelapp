@@ -9,15 +9,21 @@
 import UIKit
 
 class FavoritesBeersTableViewController: UITableViewController {
+    
+    var favoriteBeerArray: Array<String> = []
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        favoriteBeerArray = UserDefaults.standard.array(forKey: "favoriteArray" ) as! Array<String>
+         print(favoriteBeerArray)
+      
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        favoriteBeerArray = UserDefaults.standard.array(forKey: "favoriteArray" ) as! Array<String>
+        tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,23 +35,24 @@ class FavoritesBeersTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
+        
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return favoriteBeerArray.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "favoriteCell", for: indexPath)
 
-        // Configure the cell...
+      cell.textLabel?.text = favoriteBeerArray[indexPath.row]
 
         return cell
     }
-    */
+  
 
     /*
     // Override to support conditional editing of the table view.
