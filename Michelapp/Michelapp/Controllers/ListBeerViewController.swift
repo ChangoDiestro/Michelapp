@@ -81,15 +81,17 @@ class ListBeerViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellBeer", for: indexPath) as! beerTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellBeer", for: indexPath)
         
-        cell.lblTitle.text = nameArray[indexPath.row]
-        cell.lblPrice.text = priceArray[indexPath.row]
-        let url = URL(string: imageURLArray[indexPath.row])
+        cell.textLabel?.text = nameArray[indexPath.row]
+      //  cell.imageView?.image = imageURLArray
+       cell.detailTextLabel?.text = priceArray[indexPath.row]
+        
+     /*   let url = URL(string: imageURLArray[indexPath.row])
         let data = try? Data(contentsOf: url!)
         if let imageData = data {
               cell.imgBeer.image = UIImage(data: imageData)
-        }
+        } */
         
         
         

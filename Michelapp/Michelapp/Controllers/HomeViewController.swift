@@ -13,14 +13,19 @@ import Alamofire
 class HomeViewController: UIViewController, CLLocationManagerDelegate {
     
     var locationManager: CLLocationManager!
-
+    var favoriteBeerArray: Array<String> = []
+    var consumptionArray: Array<String> = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         locationManager = CLLocationManager()
         locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
-        
+        self.favoriteBeerArray.append("")
+        UserDefaults.standard.set(self.favoriteBeerArray, forKey: "favoriteArray")
+        self.consumptionArray.append("")
+        UserDefaults.standard.set(self.consumptionArray, forKey: "consumptionArray")
         
     
     }
