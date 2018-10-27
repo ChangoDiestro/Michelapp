@@ -10,6 +10,7 @@ import UIKit
 import Alamofire
 
 
+
 class ListBeerViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
@@ -75,10 +76,15 @@ class ListBeerViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellBeer", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellBeer", for: indexPath) as! beerTableViewCell
         
         
-        cell.textLabel?.text = self.nameArray[indexPath.row]
+        //cell.textLabel?.text = self.nameArray[indexPath.row]
+        let url = URL(string: "http://i.imgur.com/w5rkSIj.jpg")
+        let data = try? Data(contentsOf: url!)
+        if let imageData = data {
+              cell.imgBeer = UIImageView(image: UIImage(data: imageData))
+        }
         
         
         

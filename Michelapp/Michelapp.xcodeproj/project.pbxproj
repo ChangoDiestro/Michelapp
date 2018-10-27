@@ -10,6 +10,7 @@
 		198A03D145D009E3B512D2AC /* Pods_MichelappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46759ABD09A5B6D3981F4496 /* Pods_MichelappTests.framework */; };
 		1E233DF42183E45000D2332A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E233DF32183E45000D2332A /* ProfileViewController.swift */; };
 		1E233DF62183E4AE00D2332A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E233DF52183E4AE00D2332A /* SettingsViewController.swift */; };
+		45751B092183FBD6000ACFEB /* beerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45751B082183FBD6000ACFEB /* beerTableViewCell.swift */; };
 		45CA3B54217BA27900C3C2CE /* FavoritesBeersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA3B53217BA27900C3C2CE /* FavoritesBeersTableViewController.swift */; };
 		45CA3B56217BA2A100C3C2CE /* ListBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA3B55217BA2A100C3C2CE /* ListBeerViewController.swift */; };
 		576B148A216E5A6100B9E0FA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B1489216E5A6100B9E0FA /* HomeViewController.swift */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		1E233DF32183E45000D2332A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1E233DF52183E4AE00D2332A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		45751B082183FBD6000ACFEB /* beerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beerTableViewCell.swift; sourceTree = "<group>"; };
 		45CA3B53217BA27900C3C2CE /* FavoritesBeersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesBeersTableViewController.swift; sourceTree = "<group>"; };
 		45CA3B55217BA2A100C3C2CE /* ListBeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBeerViewController.swift; sourceTree = "<group>"; };
 		46759ABD09A5B6D3981F4496 /* Pods_MichelappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MichelappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,6 +189,7 @@
 				45CA3B55217BA2A100C3C2CE /* ListBeerViewController.swift */,
 				1E233DF32183E45000D2332A /* ProfileViewController.swift */,
 				1E233DF52183E4AE00D2332A /* SettingsViewController.swift */,
+				45751B082183FBD6000ACFEB /* beerTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -342,15 +345,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MichelappUITests/Pods-MichelappUITests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 			);
@@ -364,15 +363,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-MichelappUITests-checkManifestLockResult.txt",
 			);
@@ -386,15 +381,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Michelapp-checkManifestLockResult.txt",
 			);
@@ -408,15 +399,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-MichelappTests-checkManifestLockResult.txt",
 			);
@@ -430,15 +417,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MichelappTests/Pods-MichelappTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 			);
@@ -452,15 +435,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Michelapp/Pods-Michelapp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 			);
@@ -480,6 +459,7 @@
 				5776C3C0216CF28100E2AA80 /* AppDelegate.swift in Sources */,
 				1E233DF42183E45000D2332A /* ProfileViewController.swift in Sources */,
 				576B148A216E5A6100B9E0FA /* HomeViewController.swift in Sources */,
+				45751B092183FBD6000ACFEB /* beerTableViewCell.swift in Sources */,
 				45CA3B54217BA27900C3C2CE /* FavoritesBeersTableViewController.swift in Sources */,
 				1E233DF62183E4AE00D2332A /* SettingsViewController.swift in Sources */,
 			);

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="srl-vQ-Ljx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="srl-vQ-Ljx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,22 +23,49 @@
                                 <rect key="frame" x="0.0" y="116" width="375" height="502"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellBeer" textLabel="hsq-W8-qSl" style="IBUITableViewCellStyleDefault" id="AZI-i2-Ulv">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellBeer" rowHeight="141" id="AZI-i2-Ulv" customClass="beerTableViewCell" customModule="Michelapp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="141"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AZI-i2-Ulv" id="kF7-MZ-qB4">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="140.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hsq-W8-qSl">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pcQ-sQ-UeR">
+                                                    <rect key="frame" x="15" y="6" width="105" height="130"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="105" id="Xhy-KR-Qrz"/>
+                                                        <constraint firstAttribute="height" constant="130" id="lNb-45-60d"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Zw-Zf-BvR">
+                                                    <rect key="frame" x="128" y="11" width="206" height="32"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdZ-4g-u54">
+                                                    <rect key="frame" x="128" y="69" width="100" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bdZ-4g-u54" firstAttribute="leading" secondItem="pcQ-sQ-UeR" secondAttribute="trailing" constant="8" id="4Jf-A2-JG0"/>
+                                                <constraint firstItem="6Zw-Zf-BvR" firstAttribute="leading" secondItem="pcQ-sQ-UeR" secondAttribute="trailing" constant="8" id="Q6f-SK-kkE"/>
+                                                <constraint firstItem="bdZ-4g-u54" firstAttribute="top" secondItem="6Zw-Zf-BvR" secondAttribute="bottom" constant="26" id="fZv-dZ-2Ih"/>
+                                                <constraint firstItem="pcQ-sQ-UeR" firstAttribute="leading" secondItem="kF7-MZ-qB4" secondAttribute="leading" constant="15" id="idv-4h-sN0"/>
+                                                <constraint firstItem="pcQ-sQ-UeR" firstAttribute="top" secondItem="kF7-MZ-qB4" secondAttribute="top" constant="6" id="oXx-qa-LK9"/>
+                                                <constraint firstItem="6Zw-Zf-BvR" firstAttribute="top" secondItem="kF7-MZ-qB4" secondAttribute="top" constant="11" id="rny-S6-TAU"/>
+                                                <constraint firstAttribute="trailing" secondItem="bdZ-4g-u54" secondAttribute="trailing" constant="147" id="u35-bR-5JI"/>
+                                                <constraint firstAttribute="trailing" secondItem="6Zw-Zf-BvR" secondAttribute="trailing" constant="41" id="vg4-O4-mx2"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgBeer" destination="pcQ-sQ-UeR" id="KC5-sn-kXM"/>
+                                            <outlet property="lblPrice" destination="bdZ-4g-u54" id="swh-vg-iko"/>
+                                            <outlet property="lblTitle" destination="6Zw-Zf-BvR" id="fg4-6D-4aG"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -382,9 +409,9 @@
     <resources>
         <image name="Consumer" width="390" height="380"/>
         <image name="LaunchScreen" width="512" height="512"/>
-        <image name="icons8-home-page-32" width="24" height="24"/>
-        <image name="icons8-menu-32" width="24" height="24"/>
-        <image name="icons8-user-32" width="24" height="24"/>
+        <image name="icons8-home-page-32" width="32" height="32"/>
+        <image name="icons8-menu-32" width="32" height="32"/>
+        <image name="icons8-user-32" width="32" height="32"/>
         <image name="michelapp" width="1199" height="269"/>
         <namedColor name="LaunchScreenColor">
             <color red="0.20392156862745098" green="0.29803921568627451" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
