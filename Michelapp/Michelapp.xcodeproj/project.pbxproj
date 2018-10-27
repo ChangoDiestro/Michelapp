@@ -13,6 +13,7 @@
 		45751B092183FBD6000ACFEB /* beerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45751B082183FBD6000ACFEB /* beerTableViewCell.swift */; };
 		45CA3B54217BA27900C3C2CE /* FavoritesBeersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA3B53217BA27900C3C2CE /* FavoritesBeersTableViewController.swift */; };
 		45CA3B56217BA2A100C3C2CE /* ListBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA3B55217BA2A100C3C2CE /* ListBeerViewController.swift */; };
+		56AFBFE5218447F00024E0CE /* descriptionBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AFBFE4218447F00024E0CE /* descriptionBeerViewController.swift */; };
 		576B148A216E5A6100B9E0FA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B1489216E5A6100B9E0FA /* HomeViewController.swift */; };
 		576B148E216E7B0A00B9E0FA /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576B1490216E7B0A00B9E0FA /* Perfil.storyboard */; };
 		5776C3C0216CF28100E2AA80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5776C3BF216CF28100E2AA80 /* AppDelegate.swift */; };
@@ -51,6 +52,7 @@
 		46759ABD09A5B6D3981F4496 /* Pods_MichelappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MichelappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51D77958AFDBA14B9C70CE2F /* Pods_MichelappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MichelappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		569A37D0A3A0079B5DE48933 /* Pods-MichelappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MichelappTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MichelappTests/Pods-MichelappTests.debug.xcconfig"; sourceTree = "<group>"; };
+		56AFBFE4218447F00024E0CE /* descriptionBeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = descriptionBeerViewController.swift; sourceTree = "<group>"; };
 		572C4DD8217BAADB006317E6 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		576B1489216E5A6100B9E0FA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		576B1491216E7C2D00B9E0FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Perfil.storyboard; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				1E233DF32183E45000D2332A /* ProfileViewController.swift */,
 				1E233DF52183E4AE00D2332A /* SettingsViewController.swift */,
 				45751B082183FBD6000ACFEB /* beerTableViewCell.swift */,
+				56AFBFE4218447F00024E0CE /* descriptionBeerViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -462,6 +465,7 @@
 				45751B092183FBD6000ACFEB /* beerTableViewCell.swift in Sources */,
 				45CA3B54217BA27900C3C2CE /* FavoritesBeersTableViewController.swift in Sources */,
 				1E233DF62183E4AE00D2332A /* SettingsViewController.swift in Sources */,
+				56AFBFE5218447F00024E0CE /* descriptionBeerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

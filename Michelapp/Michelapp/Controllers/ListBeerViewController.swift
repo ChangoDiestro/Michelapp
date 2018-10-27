@@ -24,6 +24,7 @@ class ListBeerViewController: UIViewController, UITableViewDelegate, UITableView
     var imageURLArray: Array<String> = []
     var favoriteBeerArray: Array<String> = []
     var consumptionArray: Array<String> = []
+    var myIndex = 0
     
     
     override func viewDidLoad() {
@@ -68,7 +69,10 @@ class ListBeerViewController: UIViewController, UITableViewDelegate, UITableView
     }
   
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        myIndex = indexPath.row
+        performSegue(withIdentifier: "sugueCustomer", sender: self)
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // return self.nameArray.count
         return self.nameArray.count

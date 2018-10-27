@@ -81,6 +81,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="W0F-u4-fsd" id="NpJ-2h-ifV"/>
+                        <segue destination="MEf-8l-2Lr" kind="show" identifier="sugueCustomer" id="B0q-rv-xZR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ohs-RX-CXP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -124,20 +125,54 @@
             </objects>
             <point key="canvasLocation" x="5583.1999999999998" y="413.3433283358321"/>
         </scene>
-        <!--View Controller-->
+        <!--Description Beer View Controller-->
         <scene sceneID="67I-60-3FP">
             <objects>
-                <viewController id="MEf-8l-2Lr" sceneMemberID="viewController">
+                <viewController id="MEf-8l-2Lr" customClass="descriptionBeerViewController" customModule="Michelapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xOH-qb-HLa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PfO-VH-FZP">
+                                <rect key="frame" x="97" y="89" width="181" height="268"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yal-pG-gxx">
+                                <rect key="frame" x="166" y="388" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vz-O1-cHO">
+                                <rect key="frame" x="166" y="453" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XHr-xj-Con">
+                                <rect key="frame" x="67" y="501" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="5w5-R4-aA6"/>
                     </view>
+                    <connections>
+                        <outlet property="imgBeer" destination="PfO-VH-FZP" id="hRU-LN-7I0"/>
+                        <outlet property="lblDescription" destination="XHr-xj-Con" id="vdf-xo-kW7"/>
+                        <outlet property="lblPrice" destination="2vz-O1-cHO" id="NCJ-6h-bVl"/>
+                        <outlet property="lblTitle" destination="Yal-pG-gxx" id="621-yJ-1zp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lez-3b-aFo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4748" y="1156"/>
+            <point key="canvasLocation" x="4748" y="1155.472263868066"/>
         </scene>
         <!--Account-->
         <scene sceneID="beK-eS-TbY">

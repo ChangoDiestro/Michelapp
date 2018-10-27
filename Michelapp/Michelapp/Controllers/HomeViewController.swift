@@ -20,6 +20,8 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         locationManager = CLLocationManager()
         locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
+        
+        
     
     }
     
@@ -50,6 +52,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
 
+  
     /*
     // MARK: - Navigation
 
